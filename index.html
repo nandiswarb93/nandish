@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        *
+        {
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            list-style: none;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Times New Roman', Times, serif;
+        }
+        nav{
+            background:rgb(1, 14, 44);;
+            height: 50px;
+            width: 100%;
+            position: sticky;
+
+        }
+        label.logo
+        {
+            color: white;
+            font-size: 35px;
+            padding : 5px 15px;
+            font-weight: bold;
+            float: left;
+        }
+        nav ul{
+            float: right;
+            margin-right: 20px;
+
+        }
+        nav ul li{
+            display: inline-block;
+            margin: 15px 10px;
+
+
+        }
+        nav ul li a{
+            color: white;
+            font: size 20px;
+            padding: 5px;
+            border-radius: 3px;
+
+        }
+        a.active,a:hover{
+            border:1px solid orange;
+
+        }
+
+
+
+        /* first template css*/
+
+        .bg1{
+            width: 100%;
+            height: 600px;
+            background-image: url("images/Screenshot\(1149\).png");
+            background-size: cover;
+            color: white;
+            align-content: center;
+            text-align: center;
+            text-decoration: none;
+  
+           }
+           .font{
+            font-size: 50px;
+            font-weight: bold;
+
+           }
+           .flex-container1 {
+            display: flex;
+            flex-direction: row;
+            margin : 20px;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            bottom: 0px;
+
+      
+            
+          }
+          
+          .flex-container1 > div {
+            background-color: rgb(1, 14, 44);
+            width:20%;
+            height: 50px;
+            text-align: center;
+            justify-content: center;
+            align-content: center;
+            color: white;
+            margin: 20px;
+            padding: 10px;
+
+          }
+
+          .container1{
+            height: 600px;
+            width: 100%;
+            background-color: red;
+
+          }
+
+          /* second template css*/
+
+          .bg2{
+            width: 100%;
+            height: auto;
+            text-align: center;
+            background-image: url("images/choosing-bg.jpg");
+            background-size: cover;
+            color: white;
+          
+        
+           }
+        
+            .box21{
+                width: 250px;
+                height: 100px;
+                
+                color: white;
+    
+            }
+            .line2
+            {
+                width: 2px;
+                height: 80px;
+                border: 1px solid white;
+                padding: 0px;
+                color: white;
+
+
+            }
+
+            .box22{
+                width: 200px;
+                height: 20px;
+                border: 2px solid white;
+                color: white;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+            }
+            .box23{
+                display: flex;
+                flex-direction: row;
+                height: 100px;
+                width: 100%px;
+                color: white;
+               margin: 50px;
+
+            }
+            .box23 > div{
+               
+                width: 33.3%;
+                height: 100px;
+                color: white;
+                 align-content: center;
+                 justify-content: center;
+              
+
+            }
+
+            .flex-container2 {
+                display: flex;
+                flex-direction: row;
+                font-size: 20px;
+                text-align: center;
+                margin: 0px 10px 10px 10px;
+              }
+              
+              .flex2-item-left {
+                padding: 50px;
+                flex: 30%;
+                height: 250px;
+                margin: 10px 20px 20px 70px;
+              }
+              
+              .flex2-item-right {
+                padding: 50px;
+                flex: 30%;
+                height: 250px;
+                margin: 10px 70px 20px 10px;
+                text-align: justify;
+              }
+              
+              .flex2-item-left img
+              {
+                height: 250px;
+                width: 80%;
+
+
+              }
+
+              /* third template css */
+
+              .bg3{
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                background-image: url("images/coming-soon-bg.jpg");
+                background-size:contain;
+                color: white;
+               }
+    
+               .flex-container3 {
+                display: flex;
+                flex-direction: row;
+                font-size: 20px;
+                text-align: center;
+    
+              }
+              
+              .flex3-item-left {
+                padding: 50px;
+                flex: 50%;
+                height: 400px;
+                
+                
+              }
+              
+              .flex3-item-right {
+                padding: 50px;
+                flex: 30%;
+                height: 400px;
+                text-align: justify;
+                justify-content: center;
+              }
+              .flex-container3-sub{
+                display: flex;
+                flex-direction: row;
+                font-size: 20px;
+                text-align: center;
+                gap: 10px;
+              }
+              .flex3-item-day{
+                width:25%;
+                text-align: center;
+                color: white;
+                
+                background-color: gray;
+                opacity: 0.9;
+                font-size:20px ;
+                font-weight: bold;
+              }
+              .flex3-item-hour{
+                width: 25%;
+                text-align: center;
+                color: white;
+                
+                background-color: gray;
+                opacity: 0.9;
+                font-size:20px ;
+                font-weight: bold;
+              }
+              .flex3-item-minutes{
+                width: 25%;
+                text-align: center;
+                color: white;
+                
+                background-color: gray;
+                opacity: 0.9;
+                font-size:20px ;
+                font-weight: bold;
+              }
+              .flex3-item-seconds{
+                width: 25%;
+                text-align: center;
+                color: white;
+                
+                background-color: gray;
+                opacity: 0.9;
+                font-size:20px ;
+                font-weight: bold;
+                
+            }
+    
+            .color-container3
+            {
+                width: 100%;
+                height: 100px;
+                background-color: gray;
+                color: white;
+                text-align: justify;
+                align-items: center;
+                justify-content: center;
+            }
+            .register-container3{
+                width: 100%;
+                height: 300px;
+                text-align: center;
+                background:transparent;
+                opacity: 0.9;
+            }
+            .register-container3 input{
+                width: 80%;
+                height: 30px;
+                margin: 20px;
+                background:transparent;
+                font-size: 20px;
+                align-content: center;
+                justify-content: center;
+            
+                color: white;
+            }
+            .register-container3 button{
+                height: 30px;
+                width: 100px;
+                background-color: orange;
+                color: white;
+            }
+
+            /* fourth template css*/
+
+            .bg4{
+                width: 100%;
+                height: auto;
+                text-align: center;
+                background-image: url("images/choosing-bg.jpg");
+                background-size: cover;
+                color: white;
+               }
+               .container21{
+                width: 250px;
+                height: 100px;
+                color: white;
+    
+            }
+            .border22{
+                width: 200px;
+                height: 20px;
+                border: 2px solid white;
+                color: white;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+            }
+            .line2
+            {
+                width: 2px;
+                height: 80px;
+                border: 1px solid white;
+                padding: 0px;
+                color: white;
+            }
+    
+            .card-container{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                flex-wrap: wrap;
+                margin-top: 100px;
+                align-items: center;
+                justify-items: center;
+    
+            }
+            .card{
+                width: 250px;
+                background-color: #f0f0ff;
+                border-radius: 5px;
+                overflow: hidden;
+                margin: 0px 10px 10px 10px;
+              
+            }
+            .card img{
+                width: 100%;
+                height: auto;
+            }
+            .card-content{
+                padding:16px;
+            }
+            .card-content h4{
+                font-size: 28px;
+                margin-bottom: 8px;
+                color: black;
+            }
+            .card-container p{
+                color:#666 ;
+                font-size: 15px;
+                line-height: 1.3;
+                text-align: justify;
+                justify-content: center;
+    
+            }
+            .card-content img{
+                border-radius: 100%;
+                height: 50px;
+                width: 50px;
+                float: left;
+                margin-bottom: 10px;
+            }
+            /* fifth template css*/
+
+            .bg5{
+                width: 100%;
+                height: 700px;
+                background-image: url("images/video-bg.jpg");
+                background-size: cover;
+                color: white;
+                background-repeat: no-repeat;
+               }
+            .flex-container5 {
+                display: flex;
+                flex-direction: row;
+                text-align: center;
+            
+              }
+              
+              .flex5-item-left {
+                padding: 50px;
+                flex: 40%;
+                height: 350px;
+                margin: 80px;
+              }
+              
+              .flex5-item-right {
+                padding: 50px;
+                flex: 35%;
+                height: 350px;
+                margin: 80px;
+                background-image:url("images/main-thumb.png");
+                background-size: cover;
+                background-repeat: no-repeat;
+               }
+              .textalign{
+                text-align: justify;
+                padding: 10px;
+                margin-left: 20px;
+                }
+                .textalign button{
+                    background-color: orange;
+                    color: white;
+                    height: 50px;
+                    width: 150px;
+                }
+
+                /* sixth template css*/
+
+
+                /* footer css*/
+                footer{
+                    height: 40px;
+                    width: 100%;
+                    text-align: center;
+                    color: white;
+                    background-color: rgb(1, 14, 44);
+                    align-content: center;
+                   }
+                  
+
+
+        @media only screen and (min-width:0px) and (max-width: 480px) {
+            nav ul li a{
+                display: none;
+            }
+
+            /*1st template media query*/
+
+            bg1{
+                height: 100vh;
+                width: 100%;
+            }
+              .flex-container1 {
+                flex-direction: column;
+                height: 500px;
+                width: 100%;
+          
+              
+              }
+              .flex-container1 > div {
+  
+                align-items: center;
+                flex-direction: column;
+                margin: 10px;
+                width: 20%;
+                height: 50px;
+                align-items: center;
+                justify-content: center;
+                align-content: center;
+  
+              }
+              .bg1{
+                width: 100%;
+                height: auto;
+                background-image: url("images/Screenshot\(1149\).png");
+                background-size: cover;
+                color: white;
+                align-content: center;
+                text-align: center;
+                text-decoration: none;
+            
+               }
+               /*2nd media query*/
+
+               .flex-container2 {
+                flex-direction: column;
+                flex-wrap:wrap;
+                height: auto;
+                width: 100%;
+               }
+               .flex2-item-left{
+                margin: 10px;
+                padding: 10px;
+
+               }
+               .flex2-item-right{
+                margin: 10px;
+                padding: 10px;
+                
+               }
+               .flex2-item-left img
+            {
+              height: 250px;
+              width: 90%;
+
+
+            }
+
+            /* 3rd template media query*/
+            
+            .flex-container3 {
+                flex-direction: column;
+                flex-wrap:wrap;
+                height: auto;
+                width: 100%;
+                margin: 10px;
+              
+              }
+  
+              .flex3-item-day{
+                width:20%;
+                text-align: center;
+                color: white;
+                
+                background-color: gray;
+                opacity: 0.9;
+                font-size:10px ;
+                font-weight: bold;
+              }
+              .flex3-item-hour{
+                width: 25%;
+                text-align: center;
+                color: white;
+                font-size: 10px;
+                background-color: gray;
+                opacity: 0.9;
+               
+                font-weight: bold;
+              }
+              .flex3-item-minutes{
+                width: 25%;
+                text-align: center;
+                color: white;
+                font-size: 10px;
+                background-color: gray;
+                opacity: 0.9;
+                font-weight: bold;
+              }
+              .flex3-item-seconds{
+                width: 25%;
+                text-align: center;
+                color: white;
+                font-size: 10px;
+                background-color: gray;
+                opacity: 0.9;
+              
+                font-weight: bold;
+                
+            }
+  
+            .flex3-item-left {
+              padding: 20px;
+              flex: 50%;
+              height: 300px;
+              margin: 20px;
+              
+              
+            }
+            
+            .flex3-item-right {
+              padding: 20px;
+              flex: 30%;
+              height: 400px;
+              text-align: justify;
+              justify-content: center;
+              margin: 10px;
+            }
+  
+            .bg3{
+              width: 100%;
+              height: auto;
+              text-align: center;
+              background-image: url("images/coming-soon-bg.jpg");
+              background-size:cover;
+              background-repeat: no-repeat;
+              color: white;
+             }
+
+             /* 4th template media query*/
+
+             .card-container {
+                flex-direction: column;
+                flex-wrap:wrap;
+                height: auto;
+                width: 100%;
+                align-items: center;
+                justify-content: center;
+                margin-top: 30px;
+              }
+              .card{
+                  align-items: center;
+              }
+    
+
+              /* 5th template media query*/
+
+
+              .flex-container5 {
+                flex-direction: column;
+                flex-wrap:wrap;
+                height: 700px;
+                width: 100%;
+                
+              }
+              .bg5{
+                  height: auto;
+                  width: 100%;
+              }
+              .flex5-item-right{
+                  height: auto;
+                  width: auto;
+              }
+
+              .flex5-item-left {
+                padding: 10px;
+                flex: 40%;
+                height: 300px;
+                margin: 20px;
+              }
+              
+              .flex5-item-right {
+                padding: 10px;
+                flex: 35%;
+                height: 300px;
+                margin: 20px;
+                text-align: justify;
+                background-image:url("images/main-thumb.png");
+                background-size: cover;
+                background-repeat: no-repeat;
+               }
+
+  
+
+            
+        }
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <label class="logo"><span style="color: orange;">GRAD</span> SCHOOL</label>
+        <ul>
+            <li><a class="active" href="">HOME</a></li>
+            <li><a href="">ABOUT US</a></li>
+            <li><a href="">COURSES</a></li>
+            <li><a href="">CONTACT</a></li>
+            <li><a href="">EXTERNAL</a></li>
+        </ul>
+    </nav>
+
+
+
+    <div class="container1">
+        <div class="bg1">
+              
+        
+          <p href="">GRADUATE SCHOOL OF MANAGEMENT</p>
+              <div class="font">
+                <center> <p><span style="color: orange;">YOUR</span> CLASSROOM</p>       </center>
+            <center> <button style="height: 50px; width:150px;background-color:orange;font-weight: bold;text-decoration:none;" ><a href="#contact" style="color:white;margin:10px">DISCOVER ME</a></button></center>
+              </div>
+           <div class="flex-container1">
+              <div >
+              <p><span>&#128393;</span>ALL courses</p>
+              </div>
+      
+              <div>
+              <p><span>&#x1F393;</span>VIRTUAL CLASSES</p>
+              </div>
+              
+              <div>
+              <p> <span>&#128218;</span>REAL MEETING</p>
+              </div>
+      
+          </div>
+      
+      
+       </div>
+      </div>
+
+
+
+      <div class="bg2" id="aboutus">
+        <center>
+         
+         <div class="box21">
+             <div class="line2">
+             
+    
+             </div>
+             <div class="box22">
+                 why choose grad school
+    
+             </div>
+            
+         </div>
+    
+        </center>
+        <div class="box23">
+            <div style="color: orange;">BEST EDUCATION <br><span>&#x25a2;</span></div>
+            <div>TOP MANAGEMENT  <br><span>&#x25a2;</span></div>
+            <div>QUALITY MEETING  <br><span>&#x25a2;</span></div>
+        </div>
+        <center>
+            <div class="flex-container2">
+                <div class="flex2-item-left">
+                    <img  src="./images/choose-us-image-01.png" alt="choose us image 1" id="nandi">
+
+                </div>
+    
+                <div class="flex2-item-right">
+                    <h2>BEST EDUCATION</h2>
+                 <p>grad school is a free education with a bootstrap 4.5.2 CSS layout. Feel free to use it for educational or commercial purposes. you may want to make a little donation to TemplateMo. please tell your friends about us. Thank you.</p>
+           
+
+                </div>
+            </div>
+        </center>
+
+</div>
+    
+
+
+
+
+<div class="bg3">
+    <div class="flex-container3">
+        <div class="flex3-item-left">
+
+            <p style="font-size: 40px;font-weight: bold;">Take <span style="color: orange;">any Online course</span> and win $326 for your next class</p>
+
+            <div class="flex-container3-sub">
+                
+            <div class="flex3-item-day"><h1>72</h1><p style="color: orange;">DAYS</p></div>
+            <div class="flex3-item-hour"><h1>0</h1><p style="color: orange;">HOURS</p></div>
+            <div class="flex3-item-minutes"><h1>48</h1><p style="color: orange;">MINUTES</p></div>
+            <div class="flex3-item-seconds"><h1>33</h1><p style="color: orange;">SECONDS</p></div>
+         
+
+            </div>
+        
+
+        </div>
+        <div class="flex3-item-right">
+            <div class="color-container3">
+                <center><p>Register your free account and get immediate access to online courses</p></center>
+            </div>
+            
+                
+                <div class="register-container3">
+                    <input type="text" placeholder="Name"><br>
+                    <input type="email" placeholder="email" ><br>
+                    <input type="tel" placeholder="phone number" ><br>
+                    <button>GET IT NOW</button>
+                  
+                </div>
+
+
+        </div>
+
+    </div>
+</div>
+
+
+
+
+<div class="bg4">
+    <center>
+ 
+        <div class="container21">
+            <div class="line2">
+            
+   
+            </div>
+            <div class="border22">
+                why choose grad school
+   
+            </div>
+           
+        </div>
+   
+       </center>
+       <div class="card-container">
+        <div class="card">
+            <img src="./images/courses-02.jpg" alt="">
+            <div class="card-content">
+                <h4>BUSINESS WORLD</h4>
+                <p>Quisque cursur augue ut velit dictum, quis volupat enim blandit. Maecenas a lectus ac ipsum porta.</p>
+                <img src="./images/author-02.png" alt=""> 
+                <p style="float: right;">FREE >></p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./images/courses-03.jpg" alt="">
+            <div class="card-content">
+                <h4>MEDIA TECHNOLOGY</h4>
+                <p>Pellentesque ultricies diam magna,auctor cursus lectus pretium nec. Meacenas finibus lobortis enim.</p>
+
+                <img src="./images/author-03.png" alt=""> 
+                <p style="float: right;color:orange;">PAY >></p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./images/courses-03.jpg" alt="">
+            <div class="card-content">
+                <h4>COMMUNICATIONS</h4>
+                <p>Download free images and videos for your wensites by visitong Unplash, Pixabay and Pexels.  Meacenas finibus lobortis enim.</p>
+                <img src="./images/author-03.png" alt=""> 
+                <p style="float: right; top:10px" >FREE >></p>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <img src="./images/courses-05.jpg" alt="">
+            <div class="card-content">
+                <h4>BUSINESS ETHICS</h4>
+                <p>Pellentesque ultricies diam magna,auctor cursus lectus pretium nec. Meacenas finibus lobortis enim.</p>
+                <img src="./images/author-05.png" alt=""> 
+                <p style="float: right;color:orange;">PAY >></p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./images/courses-01.jpg" alt="">
+            <div class="card-content">
+                <h4>PHOTOGRAPHY</h4>
+                <p>Quisque cursur augue ut velit dictum, quis volupat enim blandit. Maecenas a lectus ac ipsum porta.</p>
+                <img src="./images/author-01.png" alt=""> 
+                <p style="float: right;">FREE >></p>
+            </div>
+        </div>
+
+       </div>
+</div>
+
+
+
+<div class="bg5">
+    <div class="flex-container5">
+
+        <div class="flex5-item-left">
+            <div>
+                <div class="textalign">
+                <p >OUR PRESENTATION IS FOR U</p>
+                <h2>WATCH THE VIDEO TO LEARN MORE <span style="color: orange;"> ABOUT GRAD SCHOOL</span></h2>
+                <p>you are NOT allowed to redistribute this template ZIP file on any template collection website. However, you can use this template to convert into a specific theme for any kind of CMS platform such as WordPress. You may <a href="">contact TemplateMo </a> for details</p>
+                <p>Suspendisse tincidunt, magna ut finibus rutrum,libero dolor euismod odio, nec , interdum quam felis non ante.</p>
+                 <button>EBTERNAL URL</button>
+                </div>
+            </div>
+            
+        </div>
+    
+        <div class="flex5-item-right">
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<!-- 6th template -->
+
+
+
+
+<footer>
+
+    <a>&copy; COPYRIGHT 2020 BY GRAD SCHOOL|DESIGN: <span style="color: orange;">TEMPLATEMO</span></a>
+
+</footer>
+
+
+
+
+    
+</body>
+</html>
